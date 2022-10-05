@@ -15,7 +15,7 @@ const { DataBrew } = require('aws-sdk');
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
-const pubClient = createClient({url : "redis://127.0.0.1:6379"});
+const pubClient = createClient({url : "redis://43.200.181.127:6379"});
 const subClient = pubClient.duplicate();
 
 const s3 = new aws.S3({
