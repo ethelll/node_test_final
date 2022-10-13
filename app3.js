@@ -17,7 +17,7 @@ const server = http.createServer(app);
 (async ()=> {
     const client = createCluster({
         rootNodes: [{
-            url : "owl-redis.yhspjt.clustercfg.apn2.cache.amazonaws.com:6379"
+            url : "redis://owl-redis.yhspjt.clustercfg.apn2.cache.amazonaws.com:6379"
         }]
     });
 
